@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="/js/myscript.js"></script>
+<link rel="stylesheet" href="css/tags-input.css">
+<script src="js/tags-input.js"></script>
+
+<body>
+    <div class="upload-area">
+        <div class="upload-header">
+            <div class="up_box">
+                <div class="upload-icon"></div>
+                <div class="upload-text">
+                    <h1>Pending Product Uploads</h1>
+                    <h2>Pending Product...</h2>
+                </div>
+            </div>
+            <div class="button_box">
+                <div class="add-facebook">
+                    <button class="btn facebook">
+                        <div class="facebook_icon"></div>
+                        <div class="facebook_text">Add More Product from Facebook</div>
+                        <img class="fb_ico_hide" src="/img/facebook-letter-logo.svg">
+                    </button>
+                </div>
+                <div class="upload-more">
+                    <button class="btn upload_box">
+                        <div class="more_text">Upload More Products</div>
+                        <img class="more_ico_hide" src="/img/002-upload-1.svg">
+                    </button>
+                </div>
+                <div class="upload-sort">
+                    <button class="btn sort_box">
+                        <div class="sort_text">Sort by</div>
+                        <img class="sort_ico" src="/img/sort-down.svg">
+                        <img class="sort_ico_hide" src="/img/list.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="album-header">
+            <h1 class="album_text">"Facebook Album Name 1"</h1>
+            <img class="album up_arrow" src="/img/up-arrow.svg" alt="/">
+        </div>
+
+        <div class="product-box">
+            <div class="product">
+                <section class="product section-1">
+                    <div class="pro_serial">
+                        <p>1.</p>
+                    </div>
+                    <div class="pro_img">
+                        <div class="img_box">
+                            <p>Product Image 1</p>
+                        </div>
+                    </div>
+                    <div class="pro_details">
+                        <div class="pro_name">
+                            <input type="text" class="name" name="name" placeholder="Product Name">
+                        </div>
+                        <div class="pro_price">
+                            <input type="text" class="price" name="name" placeholder="Price (Tk)">
+                            <input type="text" class="discounted_price" name="name" placeholder="Discounted Price (Tk)*">
+                        </div>
+                        <div class="pro_description">
+                            <textarea onkeyup="auto_grow(this)" class="description_area" rows='1' placeholder='Product Description*'
+                                name="comment"></textarea>
+                        </div>
+                    </div>
+                </section>
+                <section class="product section-2">
+                    <div class="pro_details2">
+                        <div class="quantity">
+                            <input type="text" class="quantity_box" name="name" placeholder="Quantity">
+                            <input type="text" class="weight_box" name="name" placeholder="Weight (in gms)*">
+                        </div>
+                        <div class="varient">
+                                <input type="text" id="tag-input1">
+                        
+                                <script>
+                                    var tagInput1 = new TagsInput({
+                                        selector: 'tag-input1',
+                                        duplicate: false,
+                                        max: 10
+                                    });
+                        
+                                    /* // add Data programatically
+                                    tagInput1.addData(['PHP' , 'JavaScript' , 'CSS'])
+                                    // or
+                                    tagInput1.addTag('React'); */
+                        
+                                    // check if there are any erros in the String
+                                    //tagInpu1.anyErrors('another tag');
+                        
+                                    // you can destroy the plugin like this
+                                    //tagInput1.destroy();
+                        
+                                    // reinitialize it initialize it
+                                    //tagInput1.init()
+                        
+                                    // you can do all this by method chaining too
+                                    //tagsInput1.init().addTag().addData().destroy().init()
+                                </script>
+
+                        </div>
+                        <div class="category">
+                            <input type="text" name="Catagory" class="add_category" placeholder="Add Category">
+                        </div>
+                    </div>
+                </section>
+                <section class="product section-3">
+                    <div class="submit-container">
+                        <button class="btn add_web">
+                            <img class="web_ico" src="/img/happy.svg">
+                            <p>Add to Website!</p>
+                        </button>
+                        <button class="btn cancel">Cancel</button>
+                    </div>
+                </section>
+            </div>
+            <div class="fb_option">
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox"></label>
+                </div>
+                <p>Add Buy Now Link to your Facebook Product Images?</p>
+                <button class="btn preview">Preview</button>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="intro">
+            <select id="select-backed-zelect" class="zelect-me">
+          
+              <optgroup label="definitely mammals">
+                <option value="whales">whales</option>
+                <option value="elephants">elephants</option>
+                <option value="not snakes">not snakes</option>
+              </optgroup>
+              <optgroup label="probably reptiles">
+                <option value="snakes">snakes</option>
+                <option value="iguanas">iguanas</option>
+              </optgroup>
+              <option value="option1">solo option name1</option>
+              <option value="option2">solo option name2</option>
+            </select>
+          </div>
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+<body>
+
+</body>
+
+</html>

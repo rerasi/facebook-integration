@@ -1,0 +1,54 @@
+:root {
+    --white-color: #FFFFFF;
+    --border-color: #F2F2F2;
+    --border-color-2: #9C9C9C;
+    --primary-color: #FFCC33;
+    --shadow-color: #ffe289;
+    --button-color: #FFF3CC;
+    --border-black: #000;
+    --primary-font: Apercu;
+    --darkgray-color: #484848;
+    --process-color: #D4414E;
+    --image-box-color: #D8D8D8;
+    --font-color: #737373;
+    --hover-green: #4CAF50;
+    --button-color-2:#ECECEC;
+}
+
+
+.tags-input-wrapper{
+    background: transparent;
+    padding: .225rem;
+    border-radius: .18rem;
+    max-width: 400px;
+    border: 0.094rem solid var(--border-color-2);
+    width: 100%;
+    max-width: 95%;
+    min-height: 1.875rem;
+    margin-top: 0.52rem;
+}
+.tags-input-wrapper input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 150px;
+}
+.tags-input-wrapper .tag{
+    display: inline-block;
+    background-color: var(--button-color);
+    color: black;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 14px;
+    border: 0.094rem solid var(--border-color-2);
+    border-radius: .18rem;
+    padding: 0px 3px 0px 7px;
+    margin-right: 5px;
+    margin-bottom:7px;
+    box-shadow: 0 5px 15px -2px var(--button-color);
+}
+.tags-input-wrapper .tag a {
+    margin: 0 7px 3px;
+    display: inline-block;
+    cursor: pointer;
+}
