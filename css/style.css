@@ -1,5 +1,3 @@
-
-
 :root {
     --white-color: #FFFFFF;
     --border-color: #F2F2F2;
@@ -22,6 +20,11 @@ h2 {
     margin: 0rem;
 }
 
+body {
+    display: block;
+    margin: 8px;
+}
+
 .btn{
     width: 100%;
     height: 90%;
@@ -29,7 +32,7 @@ h2 {
     border: 0;
 }
 
-.upload-area {
+.header {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -43,6 +46,11 @@ h2 {
     -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
     align-items: center;
+}
+
+.upload-area{
+    width: 94%;
+    height: 50px;
 }
 
 .upload-header {
@@ -73,44 +81,222 @@ h2 {
     background-image: url(/img/001-upload.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* background-color: #D4414E; */
     height: 80%;
     margin-top: 5px;
-    margin-left: 10px;
     min-width: 5%;
 }
 
 .upload-text {
-    width: 60%;
+    width: 90%;
     /* background-color:#ffe289; */
     height: 80%;
+    margin-left: 5px;
 }
 
-.upload-text h1,
-h2 {
+.upload-text h1 {
     font-family: var(--primary-font);
-    font-size: 1.2rem;
-    padding: 5px 0;
+    font-size: 1.1rem;
+    padding: 9px 0;
 }
 
-.upload-text h2 {
+.upload-text_hide {
     display: none;
 }
 
+
+
+
 .button_box {
-    width: 57%;
+    width: 60%;
     height: 60%;
     display: flex;
     flex-direction: row;
 }
 
+
+
+
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+  .ham2 .top {
+    stroke-dasharray: 40 121;
+  }
+  .ham2 .bottom {
+    stroke-dasharray: 40 121;
+  }
+  .ham2.active .top {
+    stroke-dashoffset: -102px;
+  }
+  .ham2.active .bottom {
+    stroke-dashoffset: -102px;
+  }
+  .ham3 .top {
+    stroke-dasharray: 40 130;
+  }
+  .ham3 .middle {
+    stroke-dasharray: 40 140;
+  }
+  .ham3 .bottom {
+    stroke-dasharray: 40 205;
+  }
+  .ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+  }
+  .ham3.active .middle {
+    stroke-dashoffset: -102px;
+  }
+  .ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+  }
+  .ham4 .top {
+    stroke-dasharray: 40 121;
+  }
+  .ham4 .bottom {
+    stroke-dasharray: 40 121;
+  }
+  .ham4.active .top {
+    stroke-dashoffset: -68px;
+  }
+  .ham4.active .bottom {
+    stroke-dashoffset: -68px;
+  }
+  .ham5 .top {
+    stroke-dasharray: 40 82;
+  }
+  .ham5 .bottom {
+    stroke-dasharray: 40 82;
+  }
+  .ham5.active .top {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+  .ham5.active .bottom {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+  .ham6 .top {
+    stroke-dasharray: 40 172;
+  }
+  .ham6 .middle {
+    stroke-dasharray: 40 111;
+  }
+  .ham6 .bottom {
+    stroke-dasharray: 40 172;
+  }
+  .ham6.active .top {
+    stroke-dashoffset: -132px;
+  }
+  .ham6.active .middle {
+    stroke-dashoffset: -71px;
+  }
+  .ham6.active .bottom {
+    stroke-dashoffset: -132px;
+  }
+  .ham7 .top {
+    stroke-dasharray: 40 82;
+  }
+  .ham7 .middle {
+    stroke-dasharray: 40 111;
+  }
+  .ham7 .bottom {
+    stroke-dasharray: 40 161;
+  }
+  .ham7.active .top {
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+  }
+  .ham7.active .middle {
+    stroke-dashoffset: 23px;
+  }
+  .ham7.active .bottom {
+    stroke-dashoffset: -83px;
+  }
+  .ham8 .top {
+    stroke-dasharray: 40 160;
+  }
+  .ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+  .ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+  .ham8.active .top {
+    stroke-dashoffset: -64px;
+  }
+  .ham8.active .middle {
+    //stroke-dashoffset: -20px;
+    transform: rotate(90deg);
+  }
+  .ham8.active .bottom {
+    stroke-dashoffset: -64px;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .add-facebook {
+    display: flex;
     width: 40%;
     height: 100%;
-    margin-top: 5px;
     margin-right: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
 }
 
@@ -124,6 +310,9 @@ h2 {
     background-color: #4A90E2;
     border-radius: .2rem;
     border: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
 }
 
 .facebook:hover {
@@ -134,13 +323,12 @@ h2 {
 .facebook_icon {
     width: 15px;
     height: 15px;
-    background-image: url(/img/facebook-letter-logo.svg);
     background-size: 100% 100%;
 }
 
 .facebook_text {
     font-family: var(--primary-font);
-    font-size: .7rem;
+    font-size: .65rem;
     font-weight: bold;
     color: var(--white-color);
 }
@@ -157,22 +345,22 @@ h2 {
 }
 
 .upload-more {
-    width: 28%;
+    display: flex;
+    width: 30%;
     height: 100%;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-right: 5px;
+    /* background-color: #000; */
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .upload_box {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 90%;
     background-color: var(--button-color);
     border-radius: .2rem;
-    border: 0;
-    align-items: center;
-    justify-content: center;
+    border: .0625rem solid #484848;
 }
 
 .upload_box:hover {
@@ -181,10 +369,14 @@ h2 {
 }
 
 .more_text {
+    display: flex;
     font-family: var(--primary-font);
-    font-size: .7rem;
+    font-size: .65rem;
     font-weight: bold;
     text-align: center;
+    margin-top: 3px;
+    align-items: center;
+    justify-content: center;
 }
 
 .more_ico_hide {
@@ -200,9 +392,10 @@ h2 {
 
 .upload-sort {
     display: flex;
-    width: 28%;
+    width: 30%;
     height: 100%;
     margin-top: 5px;
+    justify-content: flex-end;
 }
 
 .sort_box {
@@ -211,7 +404,6 @@ h2 {
     height: 90%;
     border: 0.0625rem solid #4a4a4a;
     background-color: #FFFFFF;
-    align-items: center;
     border-radius: .2rem;
 }
 
@@ -246,35 +438,62 @@ h2 {
 
 
 
-@media (max-width:1340px) {
-    .up_box {
-        width: 45%;
-    }
+@media (max-width:1202px) {
+    /* .up_box {
+        width: 38%;
+    } */
 
     .upload-icon {
-        width: 1.8rem;
+        min-width: 30px;
     }
+    
 
     .upload-text h1 {
         display: none;
     }
 
-    .upload-text h2 {
-        display: inline;
-        font-size: .8rem;
+    .upload-text_hide{
+        display: block;
     }
+    .upload-text_hide h2{
+        font-family: var(--primary-font);
+        font-size: 1.1rem;
+        padding: 9px 0;
+    }
+    
 }
 
-@media (max-width:800px) {
+
+
+@media only screen and (max-width:907px) {
+    
+    .up_box{
+        width: 60%;
+        margin-left: -10px;
+    }
+    .upload-icon {
+        min-width: 10px;
+        max-width: 30px;
+    }
+
+
+    
+    .upload-text_hide h2 {
+        font-family: var(--primary-font);
+        font-size: 1.1rem;
+        padding: 9px 0;
+    }
+
+
+
 
     .button_box {
-        width: 57%;
+        width: 35%;
         /* background-color: #D4414E; */
     }
 
     .facebook {
         width: 1.8rem;
-        float: right;
     }
 
     .facebook_text {
@@ -291,7 +510,6 @@ h2 {
 
     .upload_box {
         width: 1.8rem;
-        float: right;
     }
 
     .more_text {
@@ -304,7 +522,6 @@ h2 {
 
     .sort_box {
         width: 1.8rem;
-        float: right;
     }
 
     .sort_ico {
@@ -318,6 +535,13 @@ h2 {
     .sort_ico_hide {
         display: inline;
     }
+}
+
+@media only screen and (max-width:460px) {
+    .upload-text_hide h2{
+        font-size: 3.6vw;
+    }
+
 }
 
 
