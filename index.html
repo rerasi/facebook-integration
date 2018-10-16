@@ -8,6 +8,35 @@
 <script src="js/menu.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css"> -->
+<link rel="stylesheet" href="/dist/css/abc.min.css">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="dist/css/bootstrap-cascader-1241e02452.min.css" rel="stylesheet" type="text/css">
+
+
+<!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+<!-- <link rel="stylesheet" href="https://rawgit.com/dbrekalo/attire/master/dist/css/build.min.css"> -->
+<!-- <script src="https://rawgit.com/dbrekalo/attire/master/dist/js/build.min.js"></script> -->
+
+        <link rel="stylesheet" href="dist/fastselect.min.css">
+        <script src="dist/fastselect.standalone.js"></script>
+
+        <style>
+
+            .fstElement { font-size: 1.2em; }
+            .fstToggleBtn { min-width: 16.5em; }
+
+            .submitBtn { display: none; }
+
+            .fstMultipleMode { display: block; }
+            .fstMultipleMode .fstControls { width: 100%; }
+
+        </style>
+
+
+
+
+
 <body>
     <div class="header">
         <div class="upload-area">
@@ -25,7 +54,7 @@
 
 
                     
-                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <!-- <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                         <path
                             class="line top"
                             d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
@@ -38,39 +67,36 @@
                     </svg>
 
                     <ul class="menu">
-                            <li><a href="#">Home</a></li>
-                            <li class="active"><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Contact</a></li>
-                          </ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul> -->
 
 
 
 
 
 
-                <!-- <div class="add-facebook">
-                    <button class="btn facebook">
+                <div class="add-facebook">
+                    <button class="btn1 facebook">
                         <img class="facebook_icon" src="/img/facebook-letter-logo.svg">
                         <div class="facebook_text">Add More Product from Facebook</div>
                         <img class="fb_ico_hide" src="/img/facebook-letter-logo.svg">
                     </button>
                 </div>
                 <div class="upload-more">
-                    <button class="btn upload_box">
+                    <button class="btn1 upload_box">
                         <div class="more_text">Upload More Products</div>
                         <img class="more_ico_hide" src="/img/002-upload-1.svg">
                     </button>
                 </div>
                 <div class="upload-sort">
-                    <button class="btn sort_box">
+                    <button class="btn1 sort_box">
                         <div class="sort_text">Sort by</div>
                         <img class="sort_ico" src="/img/sort-down.svg">
                         <img class="sort_ico_hide" src="/img/list.svg">
                     </button>
-                </div> -->
+                </div>
             </div>
             </div>
         </div>
@@ -113,8 +139,36 @@
                             <input type="text" class="quantity_box" name="name" placeholder="Quantity">
                             <input type="text" class="weight_box" name="name" placeholder="Weight (in gms)*">
                         </div>
+
+                        
                         <div class="varient">
-                                <input type="text" id="tag-input1">
+
+                                <form class="attireCodeToggleBlock" action="">
+                        
+                                    <input
+                                        type="text"
+                                        multiple
+                                        class="tagsInput"
+                                        data-url="demo/data.json"
+                                        data-user-option-allowed="true"
+                                        data-load-once="true"
+                                        name="language"
+                                    />
+                        
+                                    <button class="submitBtn" type="submit">Submit</button>
+
+                                </form>
+
+
+
+
+
+
+
+
+                                <!-- <input type="text" id="tag-input1"> -->
+
+<!-- 
                         
                                 <script>
                                     var tagInput1 = new TagsInput({
@@ -122,6 +176,7 @@
                                         duplicate: false,
                                         max: 10
                                     });
+
                         
                                     /* // add Data programatically
                                     tagInput1.addData(['PHP' , 'JavaScript' , 'CSS'])
@@ -139,7 +194,7 @@
                         
                                     // you can do all this by method chaining too
                                     //tagsInput1.init().addTag().addData().destroy().init()
-                                </script>
+                                </script> -->
 
                         </div>
                         <div class="category">
@@ -149,11 +204,11 @@
                 </section>
                 <section class="product section-3">
                     <div class="submit-container">
-                        <button class="btn add_web">
+                        <button class="btn1 add_web">
                             <img class="web_ico" src="/img/happy.svg">
                             <p>Add to Website!</p>
                         </button>
-                        <button class="btn cancel">Cancel</button>
+                        <button class="btn1 cancel">Cancel</button>
                     </div>
                 </section>
             </div>
@@ -163,14 +218,127 @@
                     <label for="checkbox"></label>
                 </div>
                 <p>Add Buy Now Link to your Facebook Product Images?</p>
-                <button class="btn preview">Preview</button>
+                <button class="btn1 preview">Preview</button>
 
             </div>
 
         </div>
 
 
-     
+<!--      
+
+        <hr class="attireSeparator mod2">
+
+        <form class="attireCodeToggleBlock" action="">
+
+            <input
+                type="text"
+                multiple
+                class="tagsInput"
+                
+                data-url="demo/data.json"
+                data-user-option-allowed="true"
+                data-load-once="true"
+                name="language"
+            />
+
+            <button class="submitBtn" type="submit">Submit</button>
+
+            <script>
+                $('.tagsInput').fastselect();
+            </script>
+
+            <pre class="attireCodeHighlight"><code class="language-markup">
+                <script type="prism-html-markup"><input
+                    type="text"
+                    multiple
+                    class="tagsInput"
+                    value="Algeria,Angola"
+                    data-initial-value='[{"text": "Algeria", "value" : "Algeria"}, {"text": "Angola", "value" : "Angola"}]'
+                    data-user-option-allowed="true"
+                    data-url="demo/data.json"
+                    data-load-once="true"
+                    name="language"/>
+                </script>
+            </code></pre>
+            <!-- <pre class="attireCodeHighlight"><code class="language-javascript">$('.tagsInput').fastselect();</code></pre> -->
+
+        </form>
+
+
+
+
+        <div class="container" style="margin-top:50px;">
+            <div class="form-group">
+              <div class="col-sm-0">
+                <div id="example"></div>
+              </div>
+            </div>
+          </div>
+          
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="dist/js/bootstrap-cascader-dcbf0e3207.min.js"></script>
+        
+        <script>
+          $(function() {
+            var o = "ABCDEFJHIJKL".split(""),
+                n = function() {
+                    return function(n, c) {
+                        setTimeout(function() {
+                            var e = n.length + 1,
+                                d = [];
+                            if (4 < e) return c(d);
+                            var i = "",
+                                t = "";
+                            0 < n.length && (i = n[n.length - 1].c, t = n[n.length - 1].n), $.each(o, function(n, c) {
+                                var a = {
+                                    c: i + n,
+                                    n: t + c
+                                };
+                                4 == e && (a.hasChild = !1), d.push(a)
+                            }), c(d)
+                        }, 500)
+                    }
+                };
+            $("#example").bsCascader({
+                splitChar: " / ",
+                btnCls: 'btn-primary',
+                openOnHover: !0,
+                lazy: !0,
+                placeHolder: 'Select...',
+                loadData: n()
+            })
+        });
+        </script>
+        <script type="text/javascript">
+        
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 
